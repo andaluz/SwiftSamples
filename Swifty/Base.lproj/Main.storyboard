@@ -15,11 +15,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wazup Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cX5-fw-ttc">
+                                <rect key="frame" x="179" y="281" width="242" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="V5S-00-gKX"/>
+                                    <constraint firstAttribute="height" constant="38" id="co3-2O-8u7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-UD-or3">
+                                <rect key="frame" x="234" y="550" width="132" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.76823852400000003" blue="0.98343687260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KNO-0P-wWo"/>
+                                    <constraint firstAttribute="width" constant="132" id="dM8-VM-6pK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Touch me baby"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7xc-UD-or3" secondAttribute="bottom" constant="20" id="1gg-ZT-1V9"/>
+                            <constraint firstItem="7xc-UD-or3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C71-ym-Z02"/>
+                            <constraint firstItem="cX5-fw-ttc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IkY-9Z-mWS"/>
+                            <constraint firstItem="cX5-fw-ttc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMb-nB-5ao"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="399" y="415"/>
         </scene>
     </scenes>
 </document>

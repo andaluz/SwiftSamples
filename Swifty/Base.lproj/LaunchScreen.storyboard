@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swifty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-KF-agV">
-                                <rect key="frame" x="255" y="281" width="91" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swifty Launch screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-KF-agV">
+                                <rect key="frame" x="172" y="280" width="256" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="63K-ub-I5a"/>
-                                    <constraint firstAttribute="width" constant="91" id="wyu-sI-YWi"/>
+                                    <constraint firstAttribute="height" constant="39" id="63K-ub-I5a"/>
+                                    <constraint firstAttribute="width" constant="256" id="wyu-sI-YWi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
