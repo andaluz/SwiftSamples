@@ -36,6 +36,14 @@ class MainVC: UIViewController {
     */
 
     @IBAction func didPressButton(sender: AnyObject) {
+        // Method 1
+        //let vc: MyTableVC = self.storyboard!.instantiateViewControllerWithIdentifier("tableView") as! MyTableVC
+        //self.presentViewController(vc, animated: true, completion: nil)
+        
+        self.performSegueWithIdentifier("mySegue", sender: nil)
+    }
+    
+    func testSomeMethods() {
         let snippets = SwiftSnippets()
         snippets.myFunctionOne()
         snippets.myFunctionTwo("Hello dunya")
@@ -48,7 +56,5 @@ class MainVC: UIViewController {
         snippets.myArrayDictionary()
         snippets.reallyCoolFunc()
     }
-    
-    
    
 }
