@@ -107,8 +107,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageView" destination="mKS-Gy-ZhE" id="Jrb-pP-zwy"/>
-                                            <outlet property="textLabel" destination="8X7-MK-SI1" id="QCD-EQ-lIU"/>
                                             <outlet property="thumb" destination="mKS-Gy-ZhE" id="uOD-mL-AtR"/>
                                             <outlet property="title" destination="8X7-MK-SI1" id="xy3-Jy-Xwa"/>
                                         </connections>
