@@ -10,6 +10,7 @@
 		96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD001BBAC49A002D3079 /* MyTableVC.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD021BBAD01E002D3079 /* SampleCell.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD061BBAD80F002D3079 /* parrot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CDAD051BBAD80F002D3079 /* parrot-icon.png */; settings = {ASSET_TAGS = (); }; };
+		96ED27A51BBBE2CB00AF596B /* SwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */; settings = {ASSET_TAGS = (); }; };
 		96EFF3FE1BBA9D2D00B29B46 /* SwiftSnippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */; settings = {ASSET_TAGS = (); }; };
 		96F3EFFA1BB96AA500E7F3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3EFF91BB96AA500E7F3DF /* AppDelegate.swift */; };
 		96F3EFFF1BB96AA500E7F3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F3EFFD1BB96AA500E7F3DF /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		96CDAD001BBAC49A002D3079 /* MyTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
 		96CDAD021BBAD01E002D3079 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		96CDAD051BBAD80F002D3079 /* parrot-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parrot-icon.png"; sourceTree = "<group>"; };
+		96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUtils.swift; sourceTree = "<group>"; };
 		96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSnippets.swift; sourceTree = "<group>"; };
 		96F3EFF61BB96AA500E7F3DF /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3EFF91BB96AA500E7F3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				96F3F0021BB96AA500E7F3DF /* LaunchScreen.storyboard */,
 				96F3F0051BB96AA500E7F3DF /* Info.plist */,
 				96CDAD021BBAD01E002D3079 /* SampleCell.swift */,
+				96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				96F3EFFA1BB96AA500E7F3DF /* AppDelegate.swift in Sources */,
 				96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */,
 				96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */,
+				96ED27A51BBBE2CB00AF596B /* SwiftUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

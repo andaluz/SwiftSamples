@@ -76,23 +76,6 @@ class MyTableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
-    /*
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return myArray.count
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-        
-        // Configure the cell...
-        let title: String = myArray[indexPath.row] as! String
-        cell.textLabel?.text = title
-        
-        return cell
-    }
-    */
-
 
     /*
     // MARK: - Navigation

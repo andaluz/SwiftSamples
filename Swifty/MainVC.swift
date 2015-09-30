@@ -17,6 +17,7 @@ class MainVC: UIViewController {
 
         // Do any additional setup after loading the view.
         print("viewDidLoad()");
+        //print("Sum is ",SwiftUtils.calculateSum(4, b: 6) )
     }
 
     override func didReceiveMemoryWarning() {
