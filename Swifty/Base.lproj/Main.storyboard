@@ -82,14 +82,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKS-Gy-ZhE">
-                                                    <rect key="frame" x="0.0" y="4" width="94" height="94"/>
+                                                    <rect key="frame" x="8" y="5" width="94" height="94"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="94" id="QwA-Nd-7bd"/>
                                                         <constraint firstAttribute="width" constant="94" id="hCU-Zy-uGW"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-MK-SI1">
-                                                    <rect key="frame" x="121" y="28" width="431" height="48"/>
+                                                    <rect key="frame" x="110" y="28" width="431" height="48"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="gOS-bB-bQ2"/>
                                                     </constraints>
@@ -101,14 +101,16 @@
                                             <constraints>
                                                 <constraint firstItem="mKS-Gy-ZhE" firstAttribute="centerY" secondItem="jVQ-Oo-aXx" secondAttribute="centerY" id="40W-Iw-rEQ"/>
                                                 <constraint firstItem="8X7-MK-SI1" firstAttribute="centerY" secondItem="jVQ-Oo-aXx" secondAttribute="centerY" id="HUP-AZ-TtC"/>
-                                                <constraint firstItem="8X7-MK-SI1" firstAttribute="trailing" secondItem="jVQ-Oo-aXx" secondAttribute="trailingMargin" id="LZ4-kf-oXN"/>
-                                                <constraint firstItem="8X7-MK-SI1" firstAttribute="leading" secondItem="mKS-Gy-ZhE" secondAttribute="trailing" constant="27" id="VHn-cG-kTh"/>
-                                                <constraint firstItem="mKS-Gy-ZhE" firstAttribute="leading" secondItem="jVQ-Oo-aXx" secondAttribute="leadingMargin" constant="-8" id="nbR-IY-u65"/>
+                                                <constraint firstItem="8X7-MK-SI1" firstAttribute="trailing" secondItem="jVQ-Oo-aXx" secondAttribute="trailingMargin" constant="-11" id="LZ4-kf-oXN"/>
+                                                <constraint firstItem="8X7-MK-SI1" firstAttribute="leading" secondItem="mKS-Gy-ZhE" secondAttribute="trailing" constant="8" id="VHn-cG-kTh"/>
+                                                <constraint firstItem="mKS-Gy-ZhE" firstAttribute="leading" secondItem="jVQ-Oo-aXx" secondAttribute="leadingMargin" id="nbR-IY-u65"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageView" destination="mKS-Gy-ZhE" id="Jrb-pP-zwy"/>
                                             <outlet property="textLabel" destination="8X7-MK-SI1" id="QCD-EQ-lIU"/>
+                                            <outlet property="thumb" destination="mKS-Gy-ZhE" id="uOD-mL-AtR"/>
+                                            <outlet property="title" destination="8X7-MK-SI1" id="xy3-Jy-Xwa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

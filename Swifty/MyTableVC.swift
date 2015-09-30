@@ -67,12 +67,12 @@ class MyTableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath)
+        let cell: SampleCell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath) as! SampleCell
         
         // Configure the cell...
         let title: String = myArray[indexPath.row] as! String
-        cell.textLabel?.text = title
-        cell.imageView?.image = UIImage(named: "parrot-icon.png")
+        cell.title?.text = title
+        cell.thumb?.image = UIImage(named: "parrot-icon.png")
         
         return cell
     }
