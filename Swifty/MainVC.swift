@@ -14,13 +14,26 @@ class MainVC: UIViewController {
     
     var exampleList: [AnyObject] = [AnyObject]()
 
+    // This button is from a separate XIB file. By setting the File Owner
+    // to this class, you can add an outlet as you normally do from a storyboard :)
+    @IBOutlet var floatingButton: UIButton!
+    
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print("viewDidLoad()");
+        
+        
 
         self.initializeExampleList()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        floatingButton.frame = CGRectMake(10, 10, floatingButton.frame.size.width, floatingButton.frame.size.height)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +57,7 @@ class MainVC: UIViewController {
         //let vc: MyTableVC = self.storyboard!.instantiateViewControllerWithIdentifier("tableView") as! MyTableVC
         //self.presentViewController(vc, animated: true, completion: nil)
         
-        self.performSegueWithIdentifier("mySegue", sender: nil)
+        print("Floating button pressed!")
     }
     
     func testSomeMethods() {
