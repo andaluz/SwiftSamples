@@ -60,6 +60,7 @@
                     <connections>
                         <segue destination="zgv-Os-bqb" kind="show" identifier="segueCustomCell" id="JeY-Wk-CX4"/>
                         <segue destination="aqE-e0-iib" kind="show" identifier="segueTabBar" id="A9l-70-X3M"/>
+                        <segue destination="Aaa-RF-TNU" kind="show" identifier="segueAnimation" id="C2q-8x-mO1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -275,6 +276,45 @@
             </objects>
             <point key="canvasLocation" x="737" y="410"/>
         </scene>
+        <!--AnimationVC-->
+        <scene sceneID="gXv-7L-OHf">
+            <objects>
+                <viewController id="Aaa-RF-TNU" customClass="AnimationVC" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dAJ-q7-3mP"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNZ-Bi-YSu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5E-lt-IAd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="603-MV-Qfs">
+                                <rect key="frame" x="232" y="600" width="136" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0eg-Y9-aa5"/>
+                                    <constraint firstAttribute="width" constant="136" id="guD-bu-wda"/>
+                                </constraints>
+                                <state key="normal" title="~ Floating button ~"/>
+                                <connections>
+                                    <action selector="didPressFloatingButton:" destination="Aaa-RF-TNU" eventType="touchUpInside" id="tiQ-ur-yzT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="603-MV-Qfs" firstAttribute="centerX" secondItem="Z5E-lt-IAd" secondAttribute="centerX" id="790-s4-seO"/>
+                            <constraint firstItem="QNZ-Bi-YSu" firstAttribute="top" secondItem="603-MV-Qfs" secondAttribute="bottom" constant="-30" id="eIu-jD-RQk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="floatingButton" destination="603-MV-Qfs" id="fmf-6q-ltg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISJ-5L-UeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="1859"/>
+        </scene>
         <!--Tabbar controller-->
         <scene sceneID="K8u-hC-jNG">
             <objects>
@@ -292,7 +332,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRI-Ox-mNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2323" y="1154"/>
+            <point key="canvasLocation" x="2308" y="1154"/>
         </scene>
     </scenes>
 </document>

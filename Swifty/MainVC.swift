@@ -16,8 +16,8 @@ class MainVC: UIViewController {
 
     // This button is from a separate XIB file. By setting the File Owner
     // to this class, you can add an outlet as you normally do from a storyboard :)
-    @IBOutlet var floatingButton: UIButton!
-    
+    //@IBOutlet var floatingButton: UIButton!
+    //var floatingButton : UIButton!
     
 
     
@@ -33,14 +33,20 @@ class MainVC: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        floatingButton.frame = CGRectMake(10, 10, floatingButton.frame.size.width, floatingButton.frame.size.height)
+        // Not working.
+        //floatingButton.frame = CGRectMake(10, 10, floatingButton.frame.size.width, floatingButton.frame.size.height)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
+    /*
+    func initializeFloatingButton() {
+        floatingButton = NSBundle.mainBundle().loadNibNamed("SomeObject", owner: self, options: nil) as UIButton
+    }
+    */
 
     /*
     // MARK: - Navigation
@@ -78,7 +84,7 @@ class MainVC: UIViewController {
     func initializeExampleList() {
         exampleList.append("Custom table cell")
         exampleList.append("Tabbar Controller")
-        exampleList.append("This is item 3")
+        exampleList.append("Animations")
         exampleList.append("This is item 4")
         exampleList.append("This is item 5")
         exampleList.append("This is item 6")
@@ -121,6 +127,8 @@ class MainVC: UIViewController {
             self.performSegueWithIdentifier("segueCustomCell", sender: nil)
         case 1:
             self.performSegueWithIdentifier("segueTabBar", sender: nil)
+        case 2:
+            self.performSegueWithIdentifier("segueAnimation", sender: nil)
         default:
             print("Item \(indexPath.row)")
         }

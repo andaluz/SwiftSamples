@@ -11,6 +11,7 @@
 		963470931BBD1B5400402436 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470921BBD1B5400402436 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		963470951BBD2E5400402436 /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963470941BBD2E5400402436 /* FloatingButton.xib */; settings = {ASSET_TAGS = (); }; };
 		963470971BBD455F00402436 /* SwiftFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470961BBD455F00402436 /* SwiftFloatingButton.swift */; settings = {ASSET_TAGS = (); }; };
+		963470991BBD5ED800402436 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470981BBD5ED800402436 /* AnimationVC.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD001BBAC49A002D3079 /* MyTableVC.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD021BBAD01E002D3079 /* SampleCell.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD061BBAD80F002D3079 /* parrot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CDAD051BBAD80F002D3079 /* parrot-icon.png */; settings = {ASSET_TAGS = (); }; };
@@ -47,6 +48,7 @@
 		963470921BBD1B5400402436 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		963470941BBD2E5400402436 /* FloatingButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
 		963470961BBD455F00402436 /* SwiftFloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFloatingButton.swift; sourceTree = "<group>"; };
+		963470981BBD5ED800402436 /* AnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
 		96CDAD001BBAC49A002D3079 /* MyTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
 		96CDAD021BBAD01E002D3079 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		96CDAD051BBAD80F002D3079 /* parrot-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parrot-icon.png"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				963470921BBD1B5400402436 /* TableViewController.swift */,
 				963470941BBD2E5400402436 /* FloatingButton.xib */,
 				963470961BBD455F00402436 /* SwiftFloatingButton.swift */,
+				963470981BBD5ED800402436 /* AnimationVC.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				96F3F0281BB97B6600E7F3DF /* MainVC.swift in Sources */,
 				96F3EFFA1BB96AA500E7F3DF /* AppDelegate.swift in Sources */,
 				963470931BBD1B5400402436 /* TableViewController.swift in Sources */,
+				963470991BBD5ED800402436 /* AnimationVC.swift in Sources */,
 				96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */,
 				963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */,
 				96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */,

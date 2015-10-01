@@ -18,7 +18,7 @@
             <connections>
                 <action selector="didPressButton:" destination="-1" eventType="touchUpInside" id="gLt-wv-hEs"/>
             </connections>
-            <point key="canvasLocation" x="142.5" y="142.5"/>
+            <point key="canvasLocation" x="155.5" y="227.5"/>
         </button>
     </objects>
 </document>
