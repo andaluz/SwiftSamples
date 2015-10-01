@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:"))) {
+            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
+        }
+        
         return true
     }
 
@@ -42,5 +47,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    //http://stackoverflow.com/questions/24100313/ask-for-user-permission-to-receive-uilocalnotifications-in-ios-8/24161903#24161903
+    /*
+    func registerForNotificationPermission(application: UIApplication) -> Bool {
+        if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:"))) {
+            let notificationCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
+            notificationCategory.identifier = "INVITE_CATEGORY"
+            notificationCategory.setActions([replyAction], forContext: UIUserNotificationActionContext.Default)
+            
+            //registerting for the notification.
+            application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:[ .Sound, .Alert, .Badge], categories: nil)
+        }
+        else {
+            //do iOS 7 stuff, which is pretty much nothing for local notifications.
+        }
+        return true
+    }
+    */
 }
 

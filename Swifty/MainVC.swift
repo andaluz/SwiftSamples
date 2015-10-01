@@ -85,7 +85,7 @@ class MainVC: UIViewController {
         exampleList.append("Custom table cell")
         exampleList.append("Tabbar Controller")
         exampleList.append("Animations")
-        exampleList.append("This is item 4")
+        exampleList.append("Notification (and badge)")
         exampleList.append("This is item 5")
         exampleList.append("This is item 6")
         exampleList.append("This is item 7")
@@ -129,6 +129,8 @@ class MainVC: UIViewController {
             self.performSegueWithIdentifier("segueTabBar", sender: nil)
         case 2:
             self.performSegueWithIdentifier("segueAnimation", sender: nil)
+        case 3:
+            self.performSegueWithIdentifier("segueNotification", sender: nil)
         default:
             print("Item \(indexPath.row)")
         }

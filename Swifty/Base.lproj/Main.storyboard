@@ -61,6 +61,7 @@
                         <segue destination="zgv-Os-bqb" kind="show" identifier="segueCustomCell" id="JeY-Wk-CX4"/>
                         <segue destination="aqE-e0-iib" kind="show" identifier="segueTabBar" id="A9l-70-X3M"/>
                         <segue destination="Aaa-RF-TNU" kind="show" identifier="segueAnimation" id="C2q-8x-mO1"/>
+                        <segue destination="sxC-Hf-EaV" kind="show" identifier="segueNotification" id="9NX-Mn-P0j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -329,6 +330,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISJ-5L-UeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2308" y="1859"/>
+        </scene>
+        <!--NotificationVC-->
+        <scene sceneID="eUj-R0-yOg">
+            <objects>
+                <viewController id="sxC-Hf-EaV" customClass="NotificationVC" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hhl-a2-CgK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fg8-36-IJU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EL1-co-alw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-ob-L2X">
+                                <rect key="frame" x="233" y="285" width="134" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.76331581498125767" blue="0.88725608574359438" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EMd-Gt-VNp"/>
+                                    <constraint firstAttribute="width" constant="134" id="Led-yV-Skp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send notification">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressNotifyButton:" destination="sxC-Hf-EaV" eventType="touchUpInside" id="aXF-Li-iyD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cxk-ob-L2X" firstAttribute="centerY" secondItem="EL1-co-alw" secondAttribute="centerY" id="W0t-lN-dPf"/>
+                            <constraint firstItem="cxk-ob-L2X" firstAttribute="centerX" secondItem="EL1-co-alw" secondAttribute="centerX" id="dXo-Yc-p7Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWe-Ct-2IU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="2577"/>
         </scene>
         <!--Tabbar controller-->
         <scene sceneID="K8u-hC-jNG">

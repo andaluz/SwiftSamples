@@ -10,8 +10,8 @@
 		963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470901BBD1ABB00402436 /* ExampleCell.swift */; settings = {ASSET_TAGS = (); }; };
 		963470931BBD1B5400402436 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470921BBD1B5400402436 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		963470951BBD2E5400402436 /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963470941BBD2E5400402436 /* FloatingButton.xib */; settings = {ASSET_TAGS = (); }; };
-		963470971BBD455F00402436 /* SwiftFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470961BBD455F00402436 /* SwiftFloatingButton.swift */; settings = {ASSET_TAGS = (); }; };
 		963470991BBD5ED800402436 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470981BBD5ED800402436 /* AnimationVC.swift */; settings = {ASSET_TAGS = (); }; };
+		9634709D1BBD8AE400402436 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634709C1BBD8AE400402436 /* NotificationVC.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD001BBAC49A002D3079 /* MyTableVC.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD021BBAD01E002D3079 /* SampleCell.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD061BBAD80F002D3079 /* parrot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CDAD051BBAD80F002D3079 /* parrot-icon.png */; settings = {ASSET_TAGS = (); }; };
@@ -44,16 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		963470901BBD1ABB00402436 /* ExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
-		963470921BBD1B5400402436 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		963470941BBD2E5400402436 /* FloatingButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
-		963470961BBD455F00402436 /* SwiftFloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFloatingButton.swift; sourceTree = "<group>"; };
-		963470981BBD5ED800402436 /* AnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
-		96CDAD001BBAC49A002D3079 /* MyTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
-		96CDAD021BBAD01E002D3079 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
+		963470901BBD1ABB00402436 /* ExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleCell.swift; path = Swifty/ExampleCell.swift; sourceTree = "<group>"; };
+		963470921BBD1B5400402436 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Swifty/TableViewController.swift; sourceTree = "<group>"; };
+		963470941BBD2E5400402436 /* FloatingButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FloatingButton.xib; path = Swifty/FloatingButton.xib; sourceTree = "<group>"; };
+		963470981BBD5ED800402436 /* AnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationVC.swift; path = Swifty/AnimationVC.swift; sourceTree = "<group>"; };
+		9634709C1BBD8AE400402436 /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationVC.swift; path = Swifty/NotificationVC.swift; sourceTree = "<group>"; };
+		96CDAD001BBAC49A002D3079 /* MyTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableVC.swift; path = Swifty/MyTableVC.swift; sourceTree = "<group>"; };
+		96CDAD021BBAD01E002D3079 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleCell.swift; path = Swifty/SampleCell.swift; sourceTree = "<group>"; };
 		96CDAD051BBAD80F002D3079 /* parrot-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parrot-icon.png"; sourceTree = "<group>"; };
-		96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUtils.swift; sourceTree = "<group>"; };
-		96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSnippets.swift; sourceTree = "<group>"; };
+		96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUtils.swift; path = Swifty/SwiftUtils.swift; sourceTree = "<group>"; };
+		96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftSnippets.swift; path = Swifty/SwiftSnippets.swift; sourceTree = "<group>"; };
 		96F3EFF61BB96AA500E7F3DF /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3EFF91BB96AA500E7F3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F3EFFE1BB96AA500E7F3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		96F3F0151BB96AA500E7F3DF /* SwiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3F0191BB96AA500E7F3DF /* SwiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUITests.swift; sourceTree = "<group>"; };
 		96F3F01B1BB96AA500E7F3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96F3F0271BB97B6600E7F3DF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		96F3F0271BB97B6600E7F3DF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = Swifty/MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +94,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9634709E1BBD8AF000402436 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				96CDAD001BBAC49A002D3079 /* MyTableVC.swift */,
+				96F3F0271BB97B6600E7F3DF /* MainVC.swift */,
+				963470921BBD1B5400402436 /* TableViewController.swift */,
+				963470981BBD5ED800402436 /* AnimationVC.swift */,
+				9634709C1BBD8AE400402436 /* NotificationVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9634709F1BBD8B2400402436 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				96CDAD021BBAD01E002D3079 /* SampleCell.swift */,
+				963470901BBD1ABB00402436 /* ExampleCell.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		963470A01BBD8B6100402436 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */,
+				96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		963470A11BBD8B9000402436 /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				96F3EFFD1BB96AA500E7F3DF /* Main.storyboard */,
+				96F3F0021BB96AA500E7F3DF /* LaunchScreen.storyboard */,
+				963470941BBD2E5400402436 /* FloatingButton.xib */,
+			);
+			name = UserInterfaces;
+			sourceTree = "<group>";
+		};
 		96CDAD041BBAD72D002D3079 /* Recources */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +145,10 @@
 		96F3EFED1BB96AA500E7F3DF = {
 			isa = PBXGroup;
 			children = (
+				963470A11BBD8B9000402436 /* UserInterfaces */,
+				963470A01BBD8B6100402436 /* Sources */,
+				9634709F1BBD8B2400402436 /* CustomViews */,
+				9634709E1BBD8AF000402436 /* ViewControllers */,
 				96CDAD041BBAD72D002D3079 /* Recources */,
 				96F3EFF81BB96AA500E7F3DF /* Swifty */,
 				96F3F00D1BB96AA500E7F3DF /* SwiftyTests */,
@@ -126,21 +170,9 @@
 		96F3EFF81BB96AA500E7F3DF /* Swifty */ = {
 			isa = PBXGroup;
 			children = (
-				96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */,
-				96CDAD001BBAC49A002D3079 /* MyTableVC.swift */,
 				96F3EFF91BB96AA500E7F3DF /* AppDelegate.swift */,
-				96F3F0271BB97B6600E7F3DF /* MainVC.swift */,
-				96F3EFFD1BB96AA500E7F3DF /* Main.storyboard */,
 				96F3F0001BB96AA500E7F3DF /* Assets.xcassets */,
-				96F3F0021BB96AA500E7F3DF /* LaunchScreen.storyboard */,
 				96F3F0051BB96AA500E7F3DF /* Info.plist */,
-				96CDAD021BBAD01E002D3079 /* SampleCell.swift */,
-				96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */,
-				963470901BBD1ABB00402436 /* ExampleCell.swift */,
-				963470921BBD1B5400402436 /* TableViewController.swift */,
-				963470941BBD2E5400402436 /* FloatingButton.xib */,
-				963470961BBD455F00402436 /* SwiftFloatingButton.swift */,
-				963470981BBD5ED800402436 /* AnimationVC.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -296,7 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96EFF3FE1BBA9D2D00B29B46 /* SwiftSnippets.swift in Sources */,
-				963470971BBD455F00402436 /* SwiftFloatingButton.swift in Sources */,
 				96F3F0281BB97B6600E7F3DF /* MainVC.swift in Sources */,
 				96F3EFFA1BB96AA500E7F3DF /* AppDelegate.swift in Sources */,
 				963470931BBD1B5400402436 /* TableViewController.swift in Sources */,
@@ -305,6 +336,7 @@
 				963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */,
 				96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */,
 				96ED27A51BBBE2CB00AF596B /* SwiftUtils.swift in Sources */,
+				9634709D1BBD8AE400402436 /* NotificationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +378,7 @@
 				96F3EFFE1BB96AA500E7F3DF /* Base */,
 			);
 			name = Main.storyboard;
+			path = Swifty;
 			sourceTree = "<group>";
 		};
 		96F3F0021BB96AA500E7F3DF /* LaunchScreen.storyboard */ = {
@@ -354,6 +387,7 @@
 				96F3F0031BB96AA500E7F3DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Swifty;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
