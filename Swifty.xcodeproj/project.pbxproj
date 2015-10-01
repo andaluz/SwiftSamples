@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470901BBD1ABB00402436 /* ExampleCell.swift */; settings = {ASSET_TAGS = (); }; };
+		963470931BBD1B5400402436 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470921BBD1B5400402436 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD001BBAC49A002D3079 /* MyTableVC.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD021BBAD01E002D3079 /* SampleCell.swift */; settings = {ASSET_TAGS = (); }; };
 		96CDAD061BBAD80F002D3079 /* parrot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CDAD051BBAD80F002D3079 /* parrot-icon.png */; settings = {ASSET_TAGS = (); }; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963470901BBD1ABB00402436 /* ExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
+		963470921BBD1B5400402436 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		96CDAD001BBAC49A002D3079 /* MyTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
 		96CDAD021BBAD01E002D3079 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		96CDAD051BBAD80F002D3079 /* parrot-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parrot-icon.png"; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				96F3F0051BB96AA500E7F3DF /* Info.plist */,
 				96CDAD021BBAD01E002D3079 /* SampleCell.swift */,
 				96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */,
+				963470901BBD1ABB00402436 /* ExampleCell.swift */,
+				963470921BBD1B5400402436 /* TableViewController.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 				96EFF3FE1BBA9D2D00B29B46 /* SwiftSnippets.swift in Sources */,
 				96F3F0281BB97B6600E7F3DF /* MainVC.swift in Sources */,
 				96F3EFFA1BB96AA500E7F3DF /* AppDelegate.swift in Sources */,
+				963470931BBD1B5400402436 /* TableViewController.swift in Sources */,
 				96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */,
+				963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */,
 				96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */,
 				96ED27A51BBBE2CB00AF596B /* SwiftUtils.swift in Sources */,
 			);

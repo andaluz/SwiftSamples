@@ -45,7 +45,7 @@ class MyTableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         myArray.append("This is item 16")
         myArray.append("This is item 17")
         myArray.append("This is item 18")
-        myArray.append("This is item 19")
+        myArray.append("This is item 19")   
     }
     
     override func didReceiveMemoryWarning() {

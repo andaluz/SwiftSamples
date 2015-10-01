@@ -11,6 +11,8 @@ import UIKit
 
 
 class MainVC: UIViewController {
+    
+    var exampleList: [AnyObject] = [AnyObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,7 @@ class MainVC: UIViewController {
         // Do any additional setup after loading the view.
         print("viewDidLoad()");
         //print("Sum is ",SwiftUtils.calculateSum(4, b: 6) )
+        self.initializeExampleList()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,5 +60,55 @@ class MainVC: UIViewController {
         snippets.myArrayDictionary()
         snippets.reallyCoolFunc()
     }
+    
+    
+    func initializeExampleList() {
+        exampleList.append("Custom table cell")
+        exampleList.append("This is item 2")
+        exampleList.append("This is item 3")
+        exampleList.append("This is item 4")
+        exampleList.append("This is item 5")
+        exampleList.append("This is item 6")
+        exampleList.append("This is item 7")
+        exampleList.append("This is item 8")
+        exampleList.append("This is item 9")
+        exampleList.append("This is item 10")
+        exampleList.append("This is item 11")
+        exampleList.append("This is item 12")
+        exampleList.append("This is item 13")
+        exampleList.append("This is item 14")
+        exampleList.append("This is item 15")
+        exampleList.append("This is item 16")
+        exampleList.append("This is item 17")
+        exampleList.append("This is item 18")
+        exampleList.append("This is item 19")
+    }
    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return exampleList.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
+        // Configure the cell...
+        let title: String = exampleList[indexPath.row] as! String
+        cell.textLabel?.text = title
+        cell.imageView?.image = UIImage(named: "parrot-icon.png")
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("You selected cell #\(indexPath.row)!")
+        
+        switch indexPath.row {
+        case 0:
+            self.performSegueWithIdentifier("mySegue", sender: nil)
+        default:
+            print("Item \(indexPath.row)")
+        }
+    }
+    
 }
