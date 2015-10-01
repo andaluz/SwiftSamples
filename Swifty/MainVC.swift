@@ -19,7 +19,7 @@ class MainVC: UIViewController {
 
         // Do any additional setup after loading the view.
         print("viewDidLoad()");
-        //print("Sum is ",SwiftUtils.calculateSum(4, b: 6) )
+
         self.initializeExampleList()
     }
 
@@ -64,7 +64,7 @@ class MainVC: UIViewController {
     
     func initializeExampleList() {
         exampleList.append("Custom table cell")
-        exampleList.append("This is item 2")
+        exampleList.append("Tabbar Controller")
         exampleList.append("This is item 3")
         exampleList.append("This is item 4")
         exampleList.append("This is item 5")
@@ -105,7 +105,9 @@ class MainVC: UIViewController {
         
         switch indexPath.row {
         case 0:
-            self.performSegueWithIdentifier("mySegue", sender: nil)
+            self.performSegueWithIdentifier("segueCustomCell", sender: nil)
+        case 1:
+            self.performSegueWithIdentifier("segueTabBar", sender: nil)
         default:
             print("Item \(indexPath.row)")
         }
