@@ -300,11 +300,26 @@
                                     <action selector="didPressFloatingButton:" destination="Aaa-RF-TNU" eventType="touchUpInside" id="tiQ-ur-yzT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBE-xX-HUE">
+                                <rect key="frame" x="246" y="72" width="109" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Yrb-Kj-m4w"/>
+                                    <constraint firstAttribute="height" constant="30" id="sMU-so-mSF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Animate Error"/>
+                                <connections>
+                                    <action selector="didPressError:" destination="Aaa-RF-TNU" eventType="touchUpInside" id="N21-oe-9ri"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="603-MV-Qfs" firstAttribute="centerX" secondItem="Z5E-lt-IAd" secondAttribute="centerX" id="790-s4-seO"/>
+                            <constraint firstItem="dBE-xX-HUE" firstAttribute="top" secondItem="dAJ-q7-3mP" secondAttribute="bottom" constant="8" id="B7H-hh-S0y"/>
                             <constraint firstItem="QNZ-Bi-YSu" firstAttribute="top" secondItem="603-MV-Qfs" secondAttribute="bottom" constant="-30" id="eIu-jD-RQk"/>
+                            <constraint firstItem="dBE-xX-HUE" firstAttribute="centerX" secondItem="Z5E-lt-IAd" secondAttribute="centerX" id="udz-fP-qRG"/>
                         </constraints>
                     </view>
                     <connections>
