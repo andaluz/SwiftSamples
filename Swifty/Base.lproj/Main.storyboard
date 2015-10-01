@@ -58,7 +58,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Main page" id="PqY-uk-OQN"/>
                     <connections>
-                        <segue destination="zgv-Os-bqb" kind="show" identifier="customCell" id="JeY-Wk-CX4"/>
+                        <segue destination="zgv-Os-bqb" kind="show" identifier="segueCustomCell" id="JeY-Wk-CX4"/>
                         <segue destination="aqE-e0-iib" kind="show" identifier="segueTabBar" id="A9l-70-X3M"/>
                     </connections>
                 </viewController>
@@ -129,8 +129,8 @@
                                 <rect key="frame" x="203" y="72" width="195" height="21"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="0bj-jO-QAx"/>
-                                    <constraint firstAttribute="width" constant="195" id="TVN-jg-WMq"/>
+                                    <constraint firstAttribute="width" constant="195" id="HmL-vd-DBA"/>
+                                    <constraint firstAttribute="height" constant="21" id="aw7-cd-idS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -139,12 +139,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1fu-Xf-jOo" firstAttribute="top" secondItem="9qA-hE-uwD" secondAttribute="bottom" constant="8" id="I4t-ih-NnU"/>
+                            <constraint firstItem="1fu-Xf-jOo" firstAttribute="top" secondItem="9qA-hE-uwD" secondAttribute="bottom" constant="8" id="BqE-Mo-fGU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ILu-ud-02m" secondAttribute="trailing" id="PeO-8I-Xhp"/>
+                            <constraint firstItem="1fu-Xf-jOo" firstAttribute="centerX" secondItem="cQK-Z9-2c7" secondAttribute="centerX" id="UfR-XE-yWZ"/>
+                            <constraint firstItem="ILu-ud-02m" firstAttribute="top" secondItem="1fu-Xf-jOo" secondAttribute="bottom" constant="8" id="nQ0-pM-rOB"/>
                             <constraint firstItem="ILu-ud-02m" firstAttribute="leading" secondItem="cQK-Z9-2c7" secondAttribute="leadingMargin" id="oo1-Bq-wNm"/>
                             <constraint firstItem="Syd-eX-5dq" firstAttribute="top" secondItem="ILu-ud-02m" secondAttribute="bottom" constant="20" id="qID-VG-ZCF"/>
-                            <constraint firstItem="1fu-Xf-jOo" firstAttribute="centerX" secondItem="cQK-Z9-2c7" secondAttribute="centerX" id="x2C-zv-V97"/>
-                            <constraint firstItem="ILu-ud-02m" firstAttribute="top" secondItem="1fu-Xf-jOo" secondAttribute="bottom" constant="8" id="zj1-Cd-IfW"/>
                         </constraints>
                     </view>
                 </viewController>
