@@ -135,7 +135,12 @@ class AnimationVC: UIViewController {
     * You don't have to add delegate and so on, it's just that easy :)
     */
     @IBAction func didRecognisedEdgePanGesture(sender: UIScreenEdgePanGestureRecognizer) {
-        print("Edge Gesture Recognized!")
+        print("Edge Gesture Recognized")
+        
+        if sender.state == UIGestureRecognizerState.Began {
+            print("Edge Gesture Began!")
+            slideInMenu(true)
+        }
     }
     
     
