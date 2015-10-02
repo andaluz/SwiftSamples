@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        // This is necessary since iOS 8+, permission request is required to send notification
         if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:"))) {
-            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
+            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound, .Badge], categories: nil))
         }
         
         return true
@@ -32,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        print("Entered in background mode!")
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -40,29 +42,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        print("Coming back from inactive mode!")
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        print("Will terminate app!")
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        print("didReceiveLocalNotification")
+        
+        /**
+        * This will be called when starting app from notification center!
+        * Here you can clear the badge number.
+        */
+        print("We had \'\(application.applicationIconBadgeNumber)\' unread messages!")
+        application.applicationIconBadgeNumber = 0
     }
 
-
-    //http://stackoverflow.com/questions/24100313/ask-for-user-permission-to-receive-uilocalnotifications-in-ios-8/24161903#24161903
-    /*
-    func registerForNotificationPermission(application: UIApplication) -> Bool {
-        if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:"))) {
-            let notificationCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
-            notificationCategory.identifier = "INVITE_CATEGORY"
-            notificationCategory.setActions([replyAction], forContext: UIUserNotificationActionContext.Default)
-            
-            //registerting for the notification.
-            application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:[ .Sound, .Alert, .Badge], categories: nil)
-        }
-        else {
-            //do iOS 7 stuff, which is pretty much nothing for local notifications.
-        }
-        return true
-    }
-    */
 }
 

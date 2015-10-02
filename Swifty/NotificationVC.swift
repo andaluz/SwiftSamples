@@ -23,6 +23,7 @@ class NotificationVC: UIViewController {
     
     @IBAction func didPressNotifyButton(sender: UIButton) {
         print("Button pressed!")
+        
         /*
         UILocalNotification *localNotification = [[UILocalNotification alloc] init];
         localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
@@ -42,11 +43,23 @@ class NotificationVC: UIViewController {
         notification.alertBody = "Test"
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
         */
-        var localNotification: UILocalNotification = UILocalNotification()
-        localNotification.alertAction = "Testing notifications on iOS9"
-        localNotification.alertBody = "Woww it works!!"
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
+        guard let settings = UIApplication.sharedApplication().currentUserNotificationSettings() else { return }
+        if settings.types == .None {
+            let ac = UIAlertController(title: "Can't schedule", message: "Either we don't have permission to schedule notifications, or we haven't asked yet.", preferredStyle: .Alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(ac, animated: true, completion: nil)
+            return
+        } else {
+            let localNotification: UILocalNotification = UILocalNotification()
+            localNotification.alertAction = "This is a alert action message"
+            localNotification.alertBody = "Time has come!!!"
+            localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+            
+            //badge
+            localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        }
     }
 
     /*

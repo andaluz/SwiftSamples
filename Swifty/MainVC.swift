@@ -41,12 +41,6 @@ class MainVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
-    /*
-    func initializeFloatingButton() {
-        floatingButton = NSBundle.mainBundle().loadNibNamed("SomeObject", owner: self, options: nil) as UIButton
-    }
-    */
 
     /*
     // MARK: - Navigation
@@ -59,10 +53,6 @@ class MainVC: UIViewController {
     */
 
     @IBAction func didPressButton(sender: AnyObject) {
-        // Method 1
-        //let vc: MyTableVC = self.storyboard!.instantiateViewControllerWithIdentifier("tableView") as! MyTableVC
-        //self.presentViewController(vc, animated: true, completion: nil)
-        
         print("Floating button pressed!")
     }
     
