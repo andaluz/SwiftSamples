@@ -314,20 +314,55 @@
                                     <action selector="didPressError:" destination="Aaa-RF-TNU" eventType="touchUpInside" id="N21-oe-9ri"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0Z-AX-oqt">
+                                <rect key="frame" x="360" y="0.0" width="240" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVK-4C-RRS">
+                                        <rect key="frame" x="8" y="562" width="224" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.76823852400000003" blue="0.98343687260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="wxv-tu-jVO"/>
+                                        </constraints>
+                                        <state key="normal" title="I'm a button :P"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wVK-4C-RRS" firstAttribute="leading" secondItem="k0Z-AX-oqt" secondAttribute="leading" constant="8" id="CRm-GT-WnL"/>
+                                    <constraint firstAttribute="trailing" secondItem="wVK-4C-RRS" secondAttribute="trailing" constant="8" id="LYY-Kd-50q"/>
+                                    <constraint firstAttribute="width" constant="240" id="Saq-KZ-BN3"/>
+                                    <constraint firstAttribute="bottom" secondItem="wVK-4C-RRS" secondAttribute="bottom" constant="8" id="rGJ-7V-Sic"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="k0Z-AX-oqt" firstAttribute="centerY" secondItem="Z5E-lt-IAd" secondAttribute="centerY" id="3Xd-4u-VpX"/>
                             <constraint firstItem="603-MV-Qfs" firstAttribute="centerX" secondItem="Z5E-lt-IAd" secondAttribute="centerX" id="790-s4-seO"/>
                             <constraint firstItem="dBE-xX-HUE" firstAttribute="top" secondItem="dAJ-q7-3mP" secondAttribute="bottom" constant="8" id="B7H-hh-S0y"/>
+                            <constraint firstItem="QNZ-Bi-YSu" firstAttribute="top" secondItem="k0Z-AX-oqt" secondAttribute="bottom" id="Dce-vs-5GQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k0Z-AX-oqt" secondAttribute="trailing" constant="-20" id="E2F-59-1hW"/>
                             <constraint firstItem="QNZ-Bi-YSu" firstAttribute="top" secondItem="603-MV-Qfs" secondAttribute="bottom" constant="-30" id="eIu-jD-RQk"/>
+                            <constraint firstItem="k0Z-AX-oqt" firstAttribute="top" secondItem="Z5E-lt-IAd" secondAttribute="topMargin" id="ejM-4E-dAT"/>
                             <constraint firstItem="dBE-xX-HUE" firstAttribute="centerX" secondItem="Z5E-lt-IAd" secondAttribute="centerX" id="udz-fP-qRG"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QfE-IJ-0T6" appends="YES" id="94c-Am-6Hv"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="floatingButton" destination="603-MV-Qfs" id="fmf-6q-ltg"/>
+                        <outlet property="slideMenu" destination="k0Z-AX-oqt" id="2ul-3D-odc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISJ-5L-UeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="QfE-IJ-0T6">
+                    <rectEdge key="edges" right="YES"/>
+                    <connections>
+                        <action selector="didRecognisedEdgePanGesture:" destination="Aaa-RF-TNU" id="4Kn-V7-Apj"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2308" y="1859"/>
         </scene>

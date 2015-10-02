@@ -13,12 +13,50 @@ class AnimationVC: UIViewController {
 
     @IBOutlet weak var floatingButton: UIButton!
     
+    @IBOutlet weak var slideMenu: UIView! //it has a widt of 240 + 20 margin
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initializeNavigationBar()
+    }
+    
+    func initializeNavigationBar() {
+        let rightAddBarButtonItem:UIBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: "didPressNavMenu")
+        self.navigationItem.setRightBarButtonItems([rightAddBarButtonItem], animated: true)
+    }
+    
+    func didPressNavMenu() {
+        print("Menu button pressed")
+        
+        slideInMenu(true)
+    }
+    
+    func slideInMenu(yes: Bool) {
+        UIView.animateWithDuration(0.3, delay: 0.0, options: .CurveEaseOut, animations: {
+            
+            struct Holder {
+                static var show = true
+            }
+            
+            
+            var x: CGFloat = 0.0
+            
+            if Holder.show {
+                x = self.view.frame.width - self.slideMenu.frame.width
+                Holder.show = false
+            } else {
+                x = self.view.frame.width
+                Holder.show = true
+            }
+            
+            self.slideMenu.frame = CGRectMake(x, self.slideMenu.frame.origin.y, self.slideMenu.frame.size.width, self.slideMenu.frame.size.height)
+            
+            }, completion: { finished in
+                print("Animation floating button finished!")
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,6 +127,15 @@ class AnimationVC: UIViewController {
             })
         
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate));
+    }
+    
+    /**
+    * How it works the easy way: You add a gesture object in Storyboard, than
+    * Than ctr+drag the gesture object to the source file and add action to it.
+    * You don't have to add delegate and so on, it's just that easy :)
+    */
+    @IBAction func didRecognisedEdgePanGesture(sender: UIScreenEdgePanGestureRecognizer) {
+        print("Edge Gesture Recognized!")
     }
     
     
