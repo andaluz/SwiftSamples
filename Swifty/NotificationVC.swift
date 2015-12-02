@@ -21,6 +21,7 @@ class NotificationVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @available(iOS 8.0, *)
     @IBAction func didPressNotifyButton(sender: UIButton) {
         print("Button pressed!")
         

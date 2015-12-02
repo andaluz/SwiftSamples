@@ -19,7 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // This is necessary since iOS 8+, permission request is required to send notification
         if(UIApplication.instancesRespondToSelector(Selector("registerUserNotificationSettings:"))) {
-            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound, .Badge], categories: nil))
+            if #available(iOS 8.0, *) {
+                UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound, .Badge], categories: nil))
+            } else {
+                // Fallback on earlier versions
+            }
         }
         
         return true
