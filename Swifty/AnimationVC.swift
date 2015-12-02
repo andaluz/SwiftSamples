@@ -107,7 +107,7 @@ class AnimationVC: UIViewController {
         let translateRight: CGAffineTransform  = CGAffineTransformTranslate(CGAffineTransformIdentity, t, 0.0)
         let translateLeft: CGAffineTransform = CGAffineTransformTranslate(CGAffineTransformIdentity, -t, 0.0)
         
-        viewToShake.transform = translateLeft;
+        viewToShake.transform = translateLeft
         
         let options: UIViewAnimationOptions = [UIViewAnimationOptions.Autoreverse,UIViewAnimationOptions.Repeat]
         UIView.animateWithDuration(0.07, delay: 0.0, options: options , animations: {

@@ -30,14 +30,12 @@ class NotificationVC: UIViewController {
         localNotification.alertBody = @"new Blog Posted at iOScreator.com";
         localNotification.timeZone = [NSTimeZone defaultTimeZone];
         localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-        
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-        */
         
-        /*
+        /////////////////////////
+        
         let notification = UILocalNotification()
         //notification.timeZone = NSTimeZone.defaultTimeZone()
-        
         let dateTime = NSDate(timeIntervalSinceNow: 0)
         notification.fireDate = dateTime
         notification.alertBody = "Test"

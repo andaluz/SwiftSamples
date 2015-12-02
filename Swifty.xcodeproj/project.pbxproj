@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470901BBD1ABB00402436 /* ExampleCell.swift */; settings = {ASSET_TAGS = (); }; };
-		963470931BBD1B5400402436 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470921BBD1B5400402436 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		963470951BBD2E5400402436 /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963470941BBD2E5400402436 /* FloatingButton.xib */; settings = {ASSET_TAGS = (); }; };
-		963470991BBD5ED800402436 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470981BBD5ED800402436 /* AnimationVC.swift */; settings = {ASSET_TAGS = (); }; };
-		9634709D1BBD8AE400402436 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634709C1BBD8AE400402436 /* NotificationVC.swift */; settings = {ASSET_TAGS = (); }; };
-		96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD001BBAC49A002D3079 /* MyTableVC.swift */; settings = {ASSET_TAGS = (); }; };
-		96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD021BBAD01E002D3079 /* SampleCell.swift */; settings = {ASSET_TAGS = (); }; };
-		96CDAD061BBAD80F002D3079 /* parrot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CDAD051BBAD80F002D3079 /* parrot-icon.png */; settings = {ASSET_TAGS = (); }; };
-		96ED27A51BBBE2CB00AF596B /* SwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */; settings = {ASSET_TAGS = (); }; };
-		96EFF3FE1BBA9D2D00B29B46 /* SwiftSnippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */; settings = {ASSET_TAGS = (); }; };
+		963470911BBD1ABB00402436 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470901BBD1ABB00402436 /* ExampleCell.swift */; };
+		963470931BBD1B5400402436 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470921BBD1B5400402436 /* TableViewController.swift */; };
+		963470951BBD2E5400402436 /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963470941BBD2E5400402436 /* FloatingButton.xib */; };
+		963470991BBD5ED800402436 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963470981BBD5ED800402436 /* AnimationVC.swift */; };
+		9634709D1BBD8AE400402436 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634709C1BBD8AE400402436 /* NotificationVC.swift */; };
+		96CDAD011BBAC49A002D3079 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD001BBAC49A002D3079 /* MyTableVC.swift */; };
+		96CDAD031BBAD01E002D3079 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDAD021BBAD01E002D3079 /* SampleCell.swift */; };
+		96CDAD061BBAD80F002D3079 /* parrot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CDAD051BBAD80F002D3079 /* parrot-icon.png */; };
+		96ED27A51BBBE2CB00AF596B /* SwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED27A41BBBE2CB00AF596B /* SwiftUtils.swift */; };
+		96EFF3FE1BBA9D2D00B29B46 /* SwiftSnippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EFF3FD1BBA9D2D00B29B46 /* SwiftSnippets.swift */; };
 		96F3EFFA1BB96AA500E7F3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3EFF91BB96AA500E7F3DF /* AppDelegate.swift */; };
 		96F3EFFF1BB96AA500E7F3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F3EFFD1BB96AA500E7F3DF /* Main.storyboard */; };
 		96F3F0011BB96AA500E7F3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F3F0001BB96AA500E7F3DF /* Assets.xcassets */; };
 		96F3F0041BB96AA500E7F3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F3F0021BB96AA500E7F3DF /* LaunchScreen.storyboard */; };
 		96F3F00F1BB96AA500E7F3DF /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3F00E1BB96AA500E7F3DF /* SwiftyTests.swift */; };
 		96F3F01A1BB96AA500E7F3DF /* SwiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3F0191BB96AA500E7F3DF /* SwiftyUITests.swift */; };
-		96F3F0281BB97B6600E7F3DF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3F0271BB97B6600E7F3DF /* MainVC.swift */; settings = {ASSET_TAGS = (); }; };
+		96F3F0281BB97B6600E7F3DF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3F0271BB97B6600E7F3DF /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +262,7 @@
 				TargetAttributes = {
 					96F3EFF51BB96AA500E7F3DF = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4E83G6QUPB;
 					};
 					96F3F0091BB96AA500E7F3DF = {
 						CreatedOnToolsVersion = 7.0;
@@ -478,10 +479,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Swifty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SparklingMind.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -489,10 +494,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Swifty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SparklingMind.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
